@@ -22,7 +22,7 @@
 // }
 
 
-// ------------------------------------
+// ---------für about  und inspiration---------------------------
 
 @mixin img-small-text-side {
     display: grid;
@@ -39,17 +39,36 @@
     p {}
 }
 
-// ------------------------------------
+// ----------für lounger und - experience-------------------------
 
 @mixin img-large-text-side {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 65% 30%;
     gap: 50px;
-    margin: 7%;
 
     img {
+        height: 100vh;
         width: 100%;
     }
+
+
+    h2 {}
+
+    p {}
+}
+
+// ----------mixin für shop------------------------
+
+@mixin img-large-headphones-side {
+    display: grid;
+    grid-template-columns: 65% 30%;
+    gap: 50px;
+
+    img {
+        height: 100vh;
+        width: 100%;
+    }
+
 
     h2 {}
 

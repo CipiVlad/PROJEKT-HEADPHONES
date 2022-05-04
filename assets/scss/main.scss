@@ -64,9 +64,18 @@
 // }
 
 
+/* =================================== */
+/* --------------------GENERALS--------*/
+/* =================================== */
 
 
-//          ----about.html---
+body {
+    background-color: $main-color;
+}
+
+
+
+
 
 /* =================================== */
 /* ------💀--- h•e•a•d•e•r -💀 ---------*/
@@ -80,12 +89,33 @@
 /* =================================== */
 /*---------  m•a•i•n  ----------------*/
 /* =================================== */
+
+
 .img-small-text-side {
     @include img-small-text-side;
 }
 
 .img-large-text-side {
     @include img-large-text-side;
+}
+
+.img-large-headphones-side {
+    @include img-large-headphones-side;
+
+    div {
+        height: 87vh;
+
+    }
+
+    div img {
+        object-fit: scale-down;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 /* =================================== */
