@@ -1,0 +1,5 @@
+trigger css mit sass Befehl
+
+sass --watch assets/scss/main.scss assets/css/style.css
+
+im CSS ordner wird eine style.css.map Datei erstellt

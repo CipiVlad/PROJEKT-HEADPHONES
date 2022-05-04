@@ -1,0 +1,90 @@
+// importieren von generals (einer ausgelagerten Datei) --- immerg ganz oben wie bei fonts
+@import "../scss/generals";
+@import "_mixin.scss";
+@import "../scss/variables";
+// nesting 
+// mixin
+// mit @include wird die ausgelagerte _mixin.scss aufgerufen
+
+// nav {
+//     @include flexit;
+
+//     h1 {
+//         font-size: 2rem;
+//         font-size: $large;
+//         background-color: $main-color;
+//     }
+
+//     ul {
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+
+//         li {
+//             list-style: none;
+//             margin-right: 10px;
+//         }
+//     }
+
+// }
+
+// .card {
+//     margin: 100px 0px;
+//     display: grid;
+//     grid-template-columns: repeat(4, 1fr);
+//     gap: 20px;
+
+//     &-image {
+//         width: 100%;
+//     }
+
+//     &-title {
+//         color: $main-color;
+//     }
+
+//     p {
+//         color: $secondary-color;
+//     }
+
+//     figure {
+//         background-color: lightgray;
+
+//         &:nth-of-type(2) h2 {
+//             color: gold;
+//         }
+
+//         &:hover {
+//             box-shadow: 0 0 10px black;
+//         }
+//     }
+// }
+
+// article h3 {
+//     @include styletext(32px, 400, pink, "", uppercase, black)
+// }
+
+
+/* =================================== */
+/* ------💀--- h•e•a•d•e•r -💀 ---------*/
+/* =================================== */
+h1 {
+    color: yellow;
+}
+
+
+/* =================================== */
+/* ------🧭-- n•a•v-b•a•r --🧭---------*/
+/* =================================== */
+
+/* =================================== */
+/*---------  m•a•i•n  ----------------*/
+/* =================================== */
+
+/* =================================== */
+/* --------👣 - f•o•o•t•e•r -----------*/
+/* =================================== */
+
+/* =================================== */
+/* --🖥- m•e•d•i•a-q•u•e•r•i•e•s -📲--- */
+/* =================================== */
+@media screen and (min-width: 768px) {}

@@ -1,0 +1,22 @@
+// anlegen von mixin in ausgelagerter Datei
+// mixing
+// @mixin flexit {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+
+//     h1 {
+//         color: green;
+//     }
+// }
+
+// // parameter template
+
+// @mixin styletext($fs, $fw, $co, $td, $tt, $bg) {
+//     font-size: $fs;
+//     font-weight: $fw;
+//     color: $co;
+//     text-decoration: $td;
+//     text-transform: $tt;
+//     background-color: $bg;
+// }
