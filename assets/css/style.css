@@ -66,6 +66,40 @@ body {
   margin-right: 3vw;
 }
 
+.navbar-position-absolute {
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  position: absolute;
+  margin: 2vh 2vh 15vh 2vh;
+}
+.navbar-position-absolute div {
+  padding-left: 46vw;
+}
+.navbar-position-absolute a {
+  text-decoration: none;
+  color: #867772;
+  transition-duration: 1s;
+}
+.navbar-position-absolute a:hover {
+  text-decoration: underline;
+  color: rgb(234, 204, 194);
+}
+.navbar-position-absolute nav {
+  padding: 0 4rem;
+}
+.navbar-position-absolute a {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin: 0 0.5vw;
+}
+.navbar-position-absolute a:nth-of-type(1) {
+  margin-right: 3vw;
+}
+.navbar-position-absolute a:nth-of-type(4) {
+  margin-right: 3vw;
+}
+
 /* =================================== */
 /*---------  m•a•i•n  ----------------*/
 /* =================================== */
@@ -96,6 +130,8 @@ body {
   display: grid;
   grid-template-columns: 65% 30%;
   gap: 50px;
+  position: fixed;
+  z-index: -1;
 }
 .img-large-text-side img {
   height: 100vh;

@@ -87,7 +87,9 @@ body {
     @include navbar-sticky;
 }
 
-
+.navbar-position-absolute {
+    @include navbar-position-absolute;
+}
 
 /* =================================== */
 /*---------  m•a•i•n  ----------------*/

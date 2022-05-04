@@ -21,12 +21,56 @@
 //     background-color: $bg;
 // }
 
-
+// ---------navbar----sticky
 @mixin navbar-sticky {
     display: flex;
     justify-content: space-between;
     position: sticky;
     top: 0;
+
+    a {
+        text-decoration: none;
+        color: $nav-color;
+        transition-duration: 1s;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: $nav-color-hover;
+    }
+
+    margin: 2vh 2vh 15vh 2vh;
+
+    nav {
+        padding: 0 4rem;
+    }
+
+    a {
+        font-size: 0.8rem;
+        font-weight: 400;
+        margin: 0 0.5vw
+    }
+
+    a:nth-of-type(1) {
+        margin-right: 3vw;
+    }
+
+    a:nth-of-type(4) {
+        margin-right: 3vw;
+
+    }
+}
+
+// ---------navbar-position-absolute
+@mixin navbar-position-absolute {
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    position: absolute;
+
+    div {
+        padding-left: 46vw;
+    }
 
     a {
         text-decoration: none;
@@ -84,6 +128,8 @@
     display: grid;
     grid-template-columns: 65% 30%;
     gap: 50px;
+    position: fixed;
+    z-index: -1;
 
     img {
         height: 100vh;
