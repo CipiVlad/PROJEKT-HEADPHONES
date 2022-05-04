@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* =================================== */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -21,10 +22,11 @@ body {
 } */
 /* =================================== */
 /* =================================== */
-/* --------------------GENERALS--------*/
+/* --------------GENERALS--------------*/
 /* =================================== */
 body {
   background-color: #2e2e2e;
+  font-family: "Work Sans", sans-serif;
 }
 
 /* =================================== */
@@ -33,17 +35,51 @@ body {
 /* =================================== */
 /* ------🧭-- n•a•v-b•a•r --🧭---------*/
 /* =================================== */
+.navbar-sticky {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  margin: 2vh 2vh 15vh 2vh;
+}
+.navbar-sticky a {
+  text-decoration: none;
+  color: #867772;
+  transition-duration: 1s;
+}
+.navbar-sticky a:hover {
+  text-decoration: underline;
+  color: rgb(234, 204, 194);
+}
+.navbar-sticky nav {
+  padding: 0 4rem;
+}
+.navbar-sticky a {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin: 0 0.5vw;
+}
+.navbar-sticky a:nth-of-type(1) {
+  margin-right: 3vw;
+}
+.navbar-sticky a:nth-of-type(4) {
+  margin-right: 3vw;
+}
+
 /* =================================== */
 /*---------  m•a•i•n  ----------------*/
 /* =================================== */
-.go-beyond {
-  color: white;
-  text-align: center;
+.go-beyond h2 {
+  color: #ebccc2;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-left: 25%;
 }
 
 .hero-img {
   background: url("../img/section-about-1.jpg") center/cover no-repeat;
-  margin: 25vh 5%;
+  margin: 20vh 5%;
   padding-top: 100%;
 }
 
@@ -65,6 +101,11 @@ body {
   height: 100vh;
   width: 100%;
 }
+.video div {
+  text-align: center;
+  margin: 25vh 0;
+}
+
 .img-large-headphones-side {
   display: grid;
   grid-template-columns: 65% 30%;
@@ -89,11 +130,6 @@ body {
 }
 .img-large-headphones-side button {
   padding: 5px;
-}
-
-.video div {
-  text-align: center;
-  margin: 25vh 0;
 }
 
 /* =================================== */

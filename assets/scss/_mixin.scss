@@ -22,6 +22,45 @@
 // }
 
 
+@mixin navbar-sticky {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+
+    a {
+        text-decoration: none;
+        color: $nav-color;
+        transition-duration: 1s;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: $nav-color-hover;
+    }
+
+    margin: 2vh 2vh 15vh 2vh;
+
+    nav {
+        padding: 0 4rem;
+    }
+
+    a {
+        font-size: 0.8rem;
+        font-weight: 400;
+        margin: 0 0.5vw
+    }
+
+    a:nth-of-type(1) {
+        margin-right: 3vw;
+    }
+
+    a:nth-of-type(4) {
+        margin-right: 3vw;
+
+    }
+}
+
 // ---------für about  und inspiration---------------------------
 
 @mixin img-small-text-side {

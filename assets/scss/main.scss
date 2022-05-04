@@ -2,6 +2,8 @@
 @import "../scss/generals";
 @import "_mixin.scss";
 @import "../scss/variables";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500&display=swap');
+
 // nesting 
 // mixin
 // mit @include wird die ausgelagerte _mixin.scss aufgerufen
@@ -65,17 +67,13 @@
 
 
 /* =================================== */
-/* --------------------GENERALS--------*/
+/* --------------GENERALS--------------*/
 /* =================================== */
-
 
 body {
     background-color: $main-color;
+    font-family: 'Work Sans', sans-serif;
 }
-
-
-
-
 
 /* =================================== */
 /* ------💀--- h•e•a•d•e•r -💀 ---------*/
@@ -85,29 +83,51 @@ body {
 /* =================================== */
 /* ------🧭-- n•a•v-b•a•r --🧭---------*/
 /* =================================== */
+.navbar-sticky {
+    @include navbar-sticky;
+}
+
+
 
 /* =================================== */
 /*---------  m•a•i•n  ----------------*/
 /* =================================== */
 
-.go-beyond {
-    color: white;
-    text-align: center;
+
+// --------------main -- about-----------
+
+.go-beyond h2 {
+    color: $headline;
+    font-size: $headline-size;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-left: 25%;
 }
 
 .hero-img {
     background: url('../img/section-about-1.jpg') center / cover no-repeat;
-    margin: 25vh 5%;
+    margin: 20vh 5%;
     padding-top: 100%;
 }
+
+// ------------main-about--inspiration----
 
 .img-small-text-side {
     @include img-small-text-side;
 }
 
+// ------------main-lounger--experience----
+
 .img-large-text-side {
     @include img-large-text-side;
 }
+
+.video div {
+    text-align: center;
+    margin: 25vh 0;
+}
+
+// ------------main--shop------------------
 
 .img-large-headphones-side {
     @include img-large-headphones-side;
@@ -133,11 +153,8 @@ body {
 
 }
 
+// -------------------
 
-.video div {
-    text-align: center;
-    margin: 25vh 0;
-}
 
 /* =================================== */
 /* --------👣 - f•o•o•t•e•r -----------*/
