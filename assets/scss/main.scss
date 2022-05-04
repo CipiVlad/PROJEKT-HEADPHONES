@@ -90,6 +90,16 @@ body {
 /*---------  m•a•i•n  ----------------*/
 /* =================================== */
 
+.go-beyond {
+    color: white;
+    text-align: center;
+}
+
+.hero-img {
+    background: url('../img/section-about-1.jpg') center / cover no-repeat;
+    margin: 25vh 5%;
+    padding-top: 100%;
+}
 
 .img-small-text-side {
     @include img-small-text-side;
@@ -102,20 +112,31 @@ body {
 .img-large-headphones-side {
     @include img-large-headphones-side;
 
-    div {
-        height: 87vh;
-
-    }
-
     div img {
         object-fit: scale-down;
     }
 
-    article {
-        display: flex;
-        flex-direction: column;
+    article div {
+        text-align: center;
     }
 
+    article h3,
+    p,
+    button {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    button {
+        padding: 5px;
+    }
+
+}
+
+
+.video div {
+    text-align: center;
+    margin: 25vh 0;
 }
 
 /* =================================== */

@@ -62,13 +62,13 @@
 @mixin img-large-headphones-side {
     display: grid;
     grid-template-columns: 65% 30%;
-    gap: 50px;
+    gap: 10px;
 
-    img {
+    .img-soundwaves {
+        background: url('../img/section-composition4.jpg') center / cover no-repeat;
+        width: 90%;
         height: 100vh;
-        width: 100%;
     }
-
 
     h2 {}
 

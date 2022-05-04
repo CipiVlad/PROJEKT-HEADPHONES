@@ -36,6 +36,17 @@ body {
 /* =================================== */
 /*---------  m•a•i•n  ----------------*/
 /* =================================== */
+.go-beyond {
+  color: white;
+  text-align: center;
+}
+
+.hero-img {
+  background: url("../img/section-about-1.jpg") center/cover no-repeat;
+  margin: 25vh 5%;
+  padding-top: 100%;
+}
+
 .img-small-text-side {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -57,21 +68,32 @@ body {
 .img-large-headphones-side {
   display: grid;
   grid-template-columns: 65% 30%;
-  gap: 50px;
+  gap: 10px;
 }
-.img-large-headphones-side img {
+.img-large-headphones-side .img-soundwaves {
+  background: url("../img/section-composition4.jpg") center/cover no-repeat;
+  width: 90%;
   height: 100vh;
-  width: 100%;
-}
-.img-large-headphones-side div {
-  height: 87vh;
 }
 .img-large-headphones-side div img {
   object-fit: scale-down;
 }
-.img-large-headphones-side article {
-  display: flex;
-  flex-direction: column;
+.img-large-headphones-side article div {
+  text-align: center;
+}
+.img-large-headphones-side article h3,
+.img-large-headphones-side p,
+.img-large-headphones-side button {
+  text-align: center;
+  margin-top: 1rem;
+}
+.img-large-headphones-side button {
+  padding: 5px;
+}
+
+.video div {
+  text-align: center;
+  margin: 25vh 0;
 }
 
 /* =================================== */
