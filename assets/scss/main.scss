@@ -75,6 +75,19 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+h2 {
+    color: $headline;
+    font-size: $headline-size;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+p {
+    color: $paragraph-color;
+    font-size: $paragraph-size;
+    line-height: 1.5;
+}
+
 /* =================================== */
 /* ------💀--- h•e•a•d•e•r -💀 ---------*/
 /* =================================== */
@@ -116,6 +129,43 @@ body {
 
 .img-small-text-side {
     @include img-small-text-side;
+
+    h2 {
+        margin-bottom: 5%;
+    }
+
+    h3 {
+        color: $headline;
+        font-weight: 300;
+        margin-bottom: 2%;
+    }
+}
+
+.exist-to-create {
+    margin-left: 10%;
+
+    h4 {
+        font-weight: 300;
+        color: $headline;
+        word-spacing: 10px;
+    }
+
+    h2 {
+        margin: 2vh 0;
+    }
+
+    span {
+        color: $headline;
+        font-weight: 100;
+        letter-spacing: 1px;
+        font-size: 16px;
+        border: 1px solid $headline;
+        padding: 5px;
+    }
+
+    p {
+        margin-top: 2vh;
+    }
 }
 
 // ------------main-lounger--experience----
@@ -155,8 +205,70 @@ body {
 
 }
 
-// -------------------
+// -----sidebar--------------
 
+.sidebar {}
+
+.sidebar::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.sidebar-container {
+    position: fixed;
+    top: 50%;
+    margin-left: 3%;
+    border: aliceblue;
+
+
+}
+
+// ::marker {
+//     content: "⦿ ";
+//     color: white;
+//     font-size: 1.5em;
+
+// }
+.outer-circle {
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 1px #fff;
+    width: 25px;
+    height: 25px;
+    margin: -20px;
+    position: relative;
+}
+
+.inner-circle {
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 0.5px $headline;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    position: absolute;
+
+}
+
+.sidebar-text {
+    margin-top: -25px;
+    margin-left: 52%;
+
+
+    a {
+        color: $nav-color;
+        font-size: smaller;
+        text-decoration: none;
+    }
+
+
+}
+
+.sidebar-text a:visited {
+    color: #fff;
+    transition-duration: 1s;
+}
+
+// 
 
 /* =================================== */
 /* --------👣 - f•o•o•t•e•r -----------*/
