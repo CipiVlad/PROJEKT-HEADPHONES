@@ -84,12 +84,10 @@
 
 // ---------für about  und inspiration---------------------------
 
-@mixin img-small-text-side {
+@mixin img-small-text-about {
     display: grid;
     grid-template-columns: 45% 45% 10%;
-    margin: 20vh 0 0 10%;
-
-    div {}
+    margin: 20vh 0 20vh 0;
 
     img {
         width: 90%;
@@ -97,6 +95,22 @@
 
     article {
         align-self: center;
+    }
+
+}
+
+@mixin img-small-text-inspiration {
+    display: grid;
+    grid-template-columns: 45% 45% 10%;
+
+    img {
+        width: 100%;
+    }
+
+    article {
+        align-self: center;
+        margin: 0 5%;
+
     }
 
 }
@@ -126,21 +140,17 @@
 
 @mixin img-large-headphones-side {
     display: grid;
-    grid-template-columns: 65% 30%;
-    gap: 10px;
+    grid-template-columns: 55% 45%;
+    // gap: 10px;
 
     .img-soundwaves {
         background: url('../img/section-composition4.jpg') center / cover no-repeat;
-        width: 85%;
+        // width: 85%;
         height: 100vh;
     }
-
-    h2 {}
-
-    p {}
 }
 
-// -----------sidebar-about-------------------------
+// -----------sidebar--------------------------
 
 @mixin sidebar {
     .sidebar {}
@@ -189,7 +199,7 @@
         }
     }
 
-    .sidebar-text a:visited {
+    .sidebar-text a:hover {
         color: #fff;
         transition-duration: 1s;
     }
@@ -204,5 +214,3 @@
     }
 
 }
-
-// -------sidebar --lounger

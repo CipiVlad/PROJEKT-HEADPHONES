@@ -4,66 +4,6 @@
 @import "../scss/variables";
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500&display=swap');
 
-// nesting 
-// mixin
-// mit @include wird die ausgelagerte _mixin.scss aufgerufen
-
-// nav {
-//     @include flexit;
-
-//     h1 {
-//         font-size: 2rem;
-//         font-size: $large;
-//         background-color: $main-color;
-//     }
-
-//     ul {
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-
-//         li {
-//             list-style: none;
-//             margin-right: 10px;
-//         }
-//     }
-
-// }
-
-// .card {
-//     margin: 100px 0px;
-//     display: grid;
-//     grid-template-columns: repeat(4, 1fr);
-//     gap: 20px;
-
-//     &-image {
-//         width: 100%;
-//     }
-
-//     &-title {
-//         color: $main-color;
-//     }
-
-//     p {
-//         color: $secondary-color;
-//     }
-
-//     figure {
-//         background-color: lightgray;
-
-//         &:nth-of-type(2) h2 {
-//             color: gold;
-//         }
-
-//         &:hover {
-//             box-shadow: 0 0 10px black;
-//         }
-//     }
-// }
-
-// article h3 {
-//     @include styletext(32px, 400, pink, "", uppercase, black)
-// }
 
 
 /* =================================== */
@@ -78,7 +18,7 @@ body {
 h2 {
     color: $headline;
     font-size: $headline-size;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.5;
 }
 
@@ -86,6 +26,8 @@ p {
     color: $paragraph-color;
     font-size: $paragraph-size;
     line-height: 1.5;
+    font-weight: 200;
+
 }
 
 /* =================================== */
@@ -114,7 +56,7 @@ p {
 .go-beyond h2 {
     color: $headline;
     font-size: $headline-size;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.5;
     margin-left: 25%;
 }
@@ -127,8 +69,24 @@ p {
 
 // ------------main-about--inspiration----
 
-.img-small-text-side {
-    @include img-small-text-side;
+.img-small-text-about {
+    @include img-small-text-about;
+    margin-left: 18%;
+
+    h2 {
+        margin-bottom: 5%;
+    }
+
+    h3 {
+        color: $headline;
+        font-weight: 300;
+        margin-bottom: 2%;
+    }
+}
+
+.img-small-text-inspiration {
+    @include img-small-text-inspiration;
+    margin-left: 18%;
 
     h2 {
         margin-bottom: 5%;
@@ -142,7 +100,8 @@ p {
 }
 
 .exist-to-create {
-    margin-left: 10%;
+    margin-left: 18%;
+    margin-bottom: 20vh;
 
     h4 {
         font-weight: 300;
@@ -172,11 +131,19 @@ p {
 
 .img-large-text-side {
     @include img-large-text-side;
+
+    h2 {
+        margin-bottom: 10vh;
+    }
+
+    p:nth-of-type(3) {
+        margin-top: 1vh;
+    }
 }
 
 .video div {
     text-align: center;
-    margin: 25vh 0;
+    margin: 20vh 0 25vh 5%;
 }
 
 // ------------main--shop------------------
@@ -186,6 +153,10 @@ p {
 
     div img {
         object-fit: scale-down;
+    }
+
+    article {
+        margin-top: 10%;
     }
 
     article div {
@@ -199,8 +170,19 @@ p {
         margin-top: 1rem;
     }
 
+    h3 {
+        color: $headline;
+    }
+
     button {
-        padding: 5px;
+        padding: 15px 20px;
+        background-color: $headline;
+        box-shadow: 1px 3px 4px #2e2e2e;
+        border-radius: 1px;
+        text-decoration: none;
+        border: none;
+        font-size: 0.7rem;
+        letter-spacing: 0.3rem;
     }
 
 }
@@ -259,7 +241,64 @@ p {
     }
 }
 
-// 
+// ------contact-form-----------
+
+.contact-form {
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+
+    h2 {
+        // margin: 4vh 0;
+    }
+
+    h3 {
+        font-weight: 300;
+        margin-bottom: 4vh;
+    }
+
+    #email {
+        background-color: #2e2e2e;
+        border-style: none;
+        text-decoration: underline $headline;
+        margin-bottom: 4vh;
+        font-size: $paragraph-size;
+    }
+
+    input,
+        {
+        padding: 15px 20px;
+        background-color: $headline;
+        box-shadow: 1px 3px 4px #2e2e2e;
+        border-radius: 1px;
+        text-decoration: none;
+        border: none;
+        font-size: 0.7rem;
+        letter-spacing: 0.3rem;
+    }
+
+    button {
+        padding: 15px 20px;
+        background-color: $headline;
+        box-shadow: 1px 3px 4px #2e2e2e;
+        border-radius: 1px;
+        text-decoration: none;
+        border: none;
+        font-size: 0.7rem;
+        letter-spacing: 0.3rem;
+        margin-top: 2vh;
+    }
+
+    a {
+        text-decoration: none;
+        color: $nav-color;
+    }
+
+    p {
+        margin-top: 20vh;
+    }
+}
 
 /* =================================== */
 /* --------👣 - f•o•o•t•e•r -----------*/
