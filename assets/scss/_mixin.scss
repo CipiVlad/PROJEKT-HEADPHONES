@@ -140,4 +140,69 @@
     p {}
 }
 
-// ------------------------------------
+// -----------sidebar-about-------------------------
+
+@mixin sidebar {
+    .sidebar {}
+
+    .sidebar::after {
+        display: table;
+        content: "";
+        clear: both;
+    }
+
+    .sidebar-container {
+        position: fixed;
+        top: 38%;
+        margin-left: 3%;
+        border: aliceblue;
+    }
+
+    .outer-circle {
+        border-radius: 50%;
+        box-shadow: 0px 0px 0px 1px #fff;
+        width: 25px;
+        height: 25px;
+        margin: -20px;
+        position: relative;
+    }
+
+    .inner-circle {
+        border-radius: 50%;
+        box-shadow: 0px 0px 0px 0.5px $headline;
+        width: 15px;
+        height: 15px;
+        margin: 5px;
+        position: absolute;
+
+    }
+
+    .sidebar-text {
+        margin-top: -25px;
+        margin-left: 52%;
+
+
+        a {
+            color: $nav-color;
+            font-size: smaller;
+            text-decoration: none;
+        }
+    }
+
+    .sidebar-text a:visited {
+        color: #fff;
+        transition-duration: 1s;
+    }
+
+    .sidebar-line {
+        color: $nav-color;
+        opacity: 0.1;
+        font-size: 4rem;
+        font-weight: 100;
+        position: absolute;
+        margin: -17px;
+    }
+
+}
+
+// -------sidebar --lounger

@@ -207,65 +207,56 @@ p {
 
 // -----sidebar--------------
 
-.sidebar {}
-
-.sidebar::after {
-    display: table;
-    content: "";
-    clear: both;
+.sidebar {
+    @include sidebar;
 }
 
-.sidebar-container {
+.sidebar-container2 {
     position: fixed;
-    top: 50%;
+    top: 51%;
     margin-left: 3%;
     border: aliceblue;
 
-
-}
-
-// ::marker {
-//     content: "⦿ ";
-//     color: white;
-//     font-size: 1.5em;
-
-// }
-.outer-circle {
-    border-radius: 50%;
-    box-shadow: 0px 0px 0px 1px #fff;
-    width: 25px;
-    height: 25px;
-    margin: -20px;
-    position: relative;
-}
-
-.inner-circle {
-    border-radius: 50%;
-    box-shadow: 0px 0px 0px 0.5px $headline;
-    width: 15px;
-    height: 15px;
-    margin: 5px;
-    position: absolute;
-
-}
-
-.sidebar-text {
-    margin-top: -25px;
-    margin-left: 52%;
-
-
-    a {
-        color: $nav-color;
-        font-size: smaller;
-        text-decoration: none;
+    .sidebar-text {
+        margin-top: -29px;
+        margin-left: 34%;
     }
-
-
 }
 
-.sidebar-text a:visited {
-    color: #fff;
-    transition-duration: 1s;
+.sidebar-container3 {
+    position: fixed;
+    top: 64%;
+    margin-left: 3%;
+    border: aliceblue;
+
+    .sidebar-text {
+        margin-top: -29px;
+        margin-left: 27%;
+    }
+}
+
+.sidebar-container4 {
+    position: fixed;
+    top: 76%;
+    margin-left: 3%;
+    border: aliceblue;
+
+    .sidebar-text {
+        margin-top: -29px;
+        margin-left: 27%;
+    }
+}
+
+.sidebar-container5 {
+    position: fixed;
+    top: 88%;
+    margin-left: 3%;
+    border: aliceblue;
+
+    .sidebar-text {
+        margin-top: -29px;
+        margin-left: 61%;
+    }
 }
 
 // 

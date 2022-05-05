@@ -219,20 +219,18 @@ p {
   padding: 5px;
 }
 
-.sidebar::after {
+.sidebar .sidebar::after {
   display: table;
   content: "";
   clear: both;
 }
-
-.sidebar-container {
+.sidebar .sidebar-container {
   position: fixed;
-  top: 50%;
+  top: 38%;
   margin-left: 3%;
   border: aliceblue;
 }
-
-.outer-circle {
+.sidebar .outer-circle {
   border-radius: 50%;
   box-shadow: 0px 0px 0px 1px #fff;
   width: 25px;
@@ -240,8 +238,7 @@ p {
   margin: -20px;
   position: relative;
 }
-
-.inner-circle {
+.sidebar .inner-circle {
   border-radius: 50%;
   box-shadow: 0px 0px 0px 0.5px #ebccc2;
   width: 15px;
@@ -249,20 +246,70 @@ p {
   margin: 5px;
   position: absolute;
 }
-
-.sidebar-text {
+.sidebar .sidebar-text {
   margin-top: -25px;
   margin-left: 52%;
 }
-.sidebar-text a {
+.sidebar .sidebar-text a {
   color: #867772;
   font-size: smaller;
   text-decoration: none;
 }
-
-.sidebar-text a:visited {
+.sidebar .sidebar-text a:visited {
   color: #fff;
   transition-duration: 1s;
+}
+.sidebar .sidebar-line {
+  color: #867772;
+  opacity: 0.1;
+  font-size: 4rem;
+  font-weight: 100;
+  position: absolute;
+  margin: -17px;
+}
+
+.sidebar-container2 {
+  position: fixed;
+  top: 51%;
+  margin-left: 3%;
+  border: aliceblue;
+}
+.sidebar-container2 .sidebar-text {
+  margin-top: -29px;
+  margin-left: 34%;
+}
+
+.sidebar-container3 {
+  position: fixed;
+  top: 64%;
+  margin-left: 3%;
+  border: aliceblue;
+}
+.sidebar-container3 .sidebar-text {
+  margin-top: -29px;
+  margin-left: 27%;
+}
+
+.sidebar-container4 {
+  position: fixed;
+  top: 76%;
+  margin-left: 3%;
+  border: aliceblue;
+}
+.sidebar-container4 .sidebar-text {
+  margin-top: -29px;
+  margin-left: 27%;
+}
+
+.sidebar-container5 {
+  position: fixed;
+  top: 88%;
+  margin-left: 3%;
+  border: aliceblue;
+}
+.sidebar-container5 .sidebar-text {
+  margin-top: -29px;
+  margin-left: 61%;
 }
 
 /* =================================== */
